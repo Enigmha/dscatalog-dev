@@ -26,7 +26,7 @@ public class Product implements Serializable{
 	private String name;
 	
 	@Column(columnDefinition = "TEXT")
-	private String Description;
+	private String description;
 	private Double price;
 	private String imgUrl;
 	
@@ -47,11 +47,13 @@ public class Product implements Serializable{
 		super();
 		this.id = id;
 		this.name = name;
-		Description = description;
+		this.description = description;
 		this.price = price;
 		this.imgUrl = imgUrl;
 		this.date = date;
 	}
+	
+	
 
 	public Long getId() {
 		return id;
@@ -70,11 +72,11 @@ public class Product implements Serializable{
 	}
 
 	public String getDescription() {
-		return Description;
+		return description;
 	}
 
 	public void setDescription(String description) {
-		Description = description;
+		this.description = description;
 	}
 
 	public Double getPrice() {
@@ -104,6 +106,8 @@ public class Product implements Serializable{
 	public Set<Category> getCategories() {
 		return categories;
 	}
+	
+	
 
 	@Override
 	public int hashCode() {
