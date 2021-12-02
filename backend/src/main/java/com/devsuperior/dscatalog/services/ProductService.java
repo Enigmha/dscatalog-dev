@@ -76,9 +76,9 @@ public class ProductService {
 		catch(DataIntegrityViolationException e) { 
 			throw new DataBaseException("Violaçao de integridade");
 			
-		}
-		
+		}	
 	}
+	
 	private void copyDtoToEntity(ProductDTO dto, Product entity) {
 		
 		entity.setName(dto.getName());
