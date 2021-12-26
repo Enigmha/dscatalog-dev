@@ -1,14 +1,14 @@
-import Navbar from 'components/Navbar';
 import './assets/styles/custom.scss';
 import './App.css';
+
+import Rotas from 'Rotas';
 
 function App() {
   return (
     <>
-      <Navbar />
-      <h1>Hello DSCatalog</h1>
+      <Rotas />
+     
     </>
   );
 }
-
 export default App;
