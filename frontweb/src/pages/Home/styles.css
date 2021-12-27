@@ -8,7 +8,7 @@
   flex-direction: column-reverse;
 
   border-radius: 20px;
-}
+} 
 
 .home-content-container {
   display: flex;
@@ -52,9 +52,6 @@
     width: 510px;
     font-size: 0.6em;
     margin-bottom: 20px;
-  }
-  .home-content-container button {
-    width: 506px;
   }
   .home-image-container svg {
     width: 506px;
