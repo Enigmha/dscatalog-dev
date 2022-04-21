@@ -41,11 +41,5 @@ public class ProductsResourceTests {
 		when(service.findAllPaged(ArgumentMatchers.any())).thenReturn(page);
 	}
 	
-	@Test
 	
-	public void findAllShouldReturnPage() throws Exception{
-		mockMvc.perform(get("/products")).andExpect(status().isNotFound());		
-	}
-	
-
 }
